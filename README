@@ -1,0 +1,45 @@
+[2.5.0.0]
+1. supporting Linux Kernel 2.6.35.
+2. Fixed Ad-hoc issue: STA didn't use legacy rate when STA is Ad-hoc creator and security is OPEN-WEP or WPAPSK-TKIP.
+3. Fixed Ralink WpaSupplicant issue - Scan table didn't include RSSI.
+4. Fixed issue: If there are two APs have same SSID, AuthMode and EncrypType but different WPAPSK key, driver will only try the AP with better RSSI. 
+If that AP with better RSSI has the different WPAPSK with STA, driver still keeps trying to connect that AP with better RSSI.
+5. Refine the stack size of all functions to be smaller than 1024B.
+6. Fixed issue: Use wrong rate index in send_monitor_packets().
+7. Improve scan mechanism.
+8. Fixed issue: STA supports the WPA authentication which group cipher is WEP
+9. Fixed issue: Single SKU Bandedge Delta value decrease all channels transmit power on FCC, it should work on Channel 1 / 11.
+10. Add pre-allocate memory in module insert stage.
+11. Refuse scan query while scanning.
+12. Fix ATE frequency offset bug.
+13. Fix ATE Rx sensitivity no good issue.
+15. Fix EfuseFreeNumberCount bug.
+15. Fix TSSI structure in big endian issue.
+16. Fix Efuse_FreeBlockNumber bug.
+17. Update EDCA parameters for WMM 27T6 test.
+
+[2.4.0.4]
+1. Rfkill change stage time
+[2.4.0.3]
+1. suspend-resume autoreconnect 
+[2.4.0.2]
+1. Change scan behaviour.
+
+[2.4.0.1]
+1. Fix ATE calibration.
+
+[2.4.0.0]
+1. add new feature for auto-reconnect.
+2. change the initialization process.
+
+This program is free software. You can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+MediaTek Inc.
+Address : 5F., No.5, Tai-Yuan 1st St., Jhubei City,
+Hsinchu County 302,Taiwan, R.O.C.
+(c) Copyright 2002-2013, MediaTek Inc.
+
